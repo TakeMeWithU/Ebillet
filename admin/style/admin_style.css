@@ -1,0 +1,85 @@
+/* CSS Document */
+/***************************
+	ADMIN PAGES
+***************************/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	width: 100%;
+	background-color: #f0f5f5 ;
+}
+
+/*****************
+	HEADER
+*****************/
+
+header{
+	background-color: white ;
+	width: 100%;
+	text-align: center;
+}
+
+.topnav {
+	width: 80%; 
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+.topnav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav .icon {
+    display: none;
+}
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+    color: white;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.center{
+	width: 80%;
+	margin: auto;
+	padding: 10px 0;
+	height: auto;
+	background-color: #f0f5f5 ;
+}
+form {
+	width: 50%;
+	margin: 0 auto;
+	
+}
+form label, input{
+	display: inline-block;
+	width: 45%;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+table caption{
+	font-size: 1.5em;
+	text-align: left;
+}
+table td, th{
+	border: 1px solid #ddd;
+    padding: 8px;
+	text-align: left;
+}
+table td a{
+	text-decoration: none;
+	color: blue;
+	margin-left: 5px;
+}

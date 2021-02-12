@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	width: 100%;
+	background-color: #f0f5f5 ;
+}
+
+/*--------------------------------
+		HEADER
+---------------------------------*/
+
+header{
+	background-color: white ;
+	width: 100%;
+	text-align: center;
+}
+
+.logo, .topnav{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+
+
+.topnav {
+	width: 80%; 
+    overflow: hidden;
+}
+
+.topnav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #17E8FF;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px; 
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: green;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+/*************************
+	PARTIE PRINCIPALE
+*************************/
+.center{
+	width: 80%;
+	margin: auto;
+	padding: 10px 0;
+	height: auto;
+	background-color: #f0f5f5 ;
+}
+
+
+/***************************
+	Articles Index.php et category.php
+***************************/	
+section.galery{
+	width: 100%;
+	margin: 0 auto;
+	padding: 1% 1%;
+	overflow: hidden;
+}
+section a{
+	text-decoration: none;
+	color: black;
+}
+section.product{
+	padding: 5px;
+	margin: 5px;
+	vertical-align: top;
+    width: 20%;
+    display: inline-block;
+    border: 1px solid #ccc;
+	text-align: center;
+}
+section.product:hover{
+	border: 1px solid #777;
+}
+section.product img{
+	width: 100%;
+	height: 300px;
+}
+section.product a{
+	text-decoration: none;
+	color: black;
+}
+/*********************
+	Page Inscription
+***********************/
+.registration{
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+.registration fieldset{
+	padding: 5px 5px;
+	font-size: 20px;
+}
+.registration label, select, input{
+	display:inline-block;
+}
+.registration label{
+	width: 30%;
+	font-size: 15px;
+}
+.registration input,select {
+    width: 49%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.valideBtn{
+	background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+	width: auto;
+	padding: 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px auto;
+    height: 55px;
+	display: block;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.valideBtn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.valideBtn:focus {
+    outline: none;
+}
+
+/****************************
+		Page article.php
+****************************/
+.detail-article{
+	height: 500px;
+	margin: 50px 10px;
+}
+.detail-article img{
+	display: inline-block;
+	width: 30%;
+	height: 400px;
+	border: 1px solid #777;
+	padding: 5px;
+}
+.info{
+	display: inline-block;
+	width: 58%;
+}
+.detail-article img, .info{
+	vertical-align: top;
+}
+.info h2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.info h4{
+	margin-bottom: 20px;
+}
+.info p{
+	margin-bottom: 20px;
+}
+.info form{
+	float: right;
+}
+.info form select{
+	display: inline-block;
+	width: auto;
+}
+.info form button{
+ padding:0.3em 1.2em;
+ margin:0 0.3em 0.3em 0;
+ border-radius:2em;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family:'Roboto',sans-serif;
+ font-weight:300;
+ color:#FFFFFF;
+ background-color:#4eb5f1;
+ text-align:center;
+ transition: all 0.2s;
+}
+
+/***************************
+		panier.php
+****************************/
+table{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+}
+table caption{
+	font-size: 1.5em;
+	text-align: left;
+}
+table td, th{
+	border: 1px solid #ddd;
+    padding: 8px;
+	text-align: left;
+}
+table td a{
+	text-decoration: none;
+	color: blue;
+	margin-left: 5px;
+}
+/*****************************
+			FOOTER
+******************************/
+footer{
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+footer i{
+	margin-right: 2px;	
+}
+
+@media screen and (max-width: 800px) {
+	header{
+		text-align: center;
+	}
+	.topnav {
+		width: 100%;
+	}
+	.topnav a:not(:first-child), .dropdown .dropbtn {
+    	display: none;
+  	}
+  	.topnav a.icon {
+    	float: right;
+    	display: block;
+  	}
+
+  	.topnav.responsive {position: relative;}
+	.topnav.responsive a.icon {
+		position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+	.topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: left;
+	}
+	.topnav.responsive .dropdown {float: none;}
+	.topnav.responsive .dropdown-content {position: relative;}
+	.topnav.responsive .dropdown .dropbtn {
+	    display: block;
+	    width: 100%;
+	    text-align: left;
+	}
+
+  	section.product{
+        width: 100%;
+    }
+	
+	.registration{
+		width: 100%;
+	}
+}
+

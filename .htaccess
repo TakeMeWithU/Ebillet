@@ -1,0 +1,5 @@
+Options -Indexes
+
+AddType application/x-httpd-php .htm .html
+
+ErrorDocument 404 /not-found-page.html
